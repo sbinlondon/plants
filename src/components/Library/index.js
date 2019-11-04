@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import List from './List'
 
 export default class Library extends React.Component {
@@ -8,6 +9,7 @@ export default class Library extends React.Component {
 			<div>
 				<p>PLAAAAAAAANTS 🌿🌴🍃🥺</p>
 				<List />
+				<Link to="/edit">Add a new plant!</Link>
 			</div>
 		);
 	}

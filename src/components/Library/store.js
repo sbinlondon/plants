@@ -18,13 +18,7 @@ export default class CreateLibraryStore {
 			frequency: 4
 		}
 	]
-
-    addMessage = (data) => {
-        console.log(data);
-        this.messages.push(data);
-    };
 }
 decorate(CreateLibraryStore, {
-	update: action,
 	plants: observable
 });

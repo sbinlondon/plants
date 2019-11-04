@@ -9,9 +9,8 @@ import Library from './components/Library/index'
 
 class App extends Component {
 
-  editStore = new EditStore()
   libraryStore = new LibraryStore()
-
+  editStore = new EditStore(this.libraryStore)
 
   render () {
   return (
@@ -21,9 +20,9 @@ class App extends Component {
         <Link to="/">PLANTS!</Link>
       </div>
       <div className="container">
-      <Route exact path="/" component={Home} />
-      <Route exact path="/edit" component={Edit} />
-      <Route exact path="/library" component={Library} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/edit" component={Edit} />
+        <Route exact path="/library" component={Library} />
       </div>
     </Provider>
   </Router>   

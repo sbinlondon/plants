@@ -1,6 +1,7 @@
 import React from "react";
 import { inject, observer } from "mobx-react";
 import { Select, TextField } from '../Forms/index'
+import List from '../Library/List'
 
 class Edit extends React.Component {
 
@@ -8,6 +9,10 @@ class Edit extends React.Component {
 		console.log(event.target.value)
 		console.log(key)
 		this.props.editStore.update(key, event.target.value);
+	}
+
+	handleSubmit = () => {
+		this.props.editStore.addPlant()
 	}
 
 	render() {
@@ -55,6 +60,12 @@ class Edit extends React.Component {
 						value={this.props.editStore.type}
 						onChange={this.handleStoreChange.bind(this, "type")}
 					 />
+					 </div>
+					 <div>
+						 <button onClick={this.handleSubmit}>Submit</button>
+					 </div>
+					 <div>
+						 <List />
 					 </div>
 			</div>
 		);
