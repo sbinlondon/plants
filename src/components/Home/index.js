@@ -7,7 +7,7 @@ export default class Home extends React.Component {
 			<div className="App">
 				<header className="App-header">
 					<p>
-						Here will be plants!
+						Here will be plants! 🌿
   					</p>
 					<Link to="/edit">EDIT SOME PLANTS!</Link>
 				</header>

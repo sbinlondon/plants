@@ -3,7 +3,7 @@ import { action, decorate, observable } from 'mobx';
 export default class CreateEditStore {
 	type = '';
 	name = 'Bob';
-	frequency=5;
+	frequency=1;
 
     update = (key, value) => {
         this[key] = value;
