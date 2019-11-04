@@ -8,7 +8,8 @@ export default class Home extends React.Component {
 					<p>
 						Here will be plants! 🌿
   					</p>
-					<Link to="/edit">EDIT SOME PLANTS!</Link>
+					  <div><Link to="/edit">EDIT SOME PLANTS!</Link></div>
+					  <div><Link to="/library">LOOK AT MY PLANTS!</Link></div>
 			</div>
 		);
 	}
