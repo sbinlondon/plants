@@ -13,11 +13,11 @@ class Edit extends React.Component {
 	render() {
 		console.log(this.props.editStore)
 		return (
-			<div className="App">
-				<header className="App-header">
+			<div>
 					<p>
 						Here will be editing!
   					</p>
+					  <div className="formElement">
 					<Select
 						label="Watering frequency"
 						options={
@@ -32,11 +32,15 @@ class Edit extends React.Component {
 						value={this.props.editStore.frequency}
 						onChange={this.handleStoreChange.bind(this, "frequency")}
 					 />
+					 </div>
+					 <div className="formElement">
 					 <TextField 
 						 label="Plant name"
 						 value={this.props.editStore.name}
 						 onChange={this.handleStoreChange.bind(this, "name")}
 					/>
+					</div>
+					<div className="formElement">
 					<Select
 						label="Type of plant"
 						options={
@@ -51,7 +55,7 @@ class Edit extends React.Component {
 						value={this.props.editStore.type}
 						onChange={this.handleStoreChange.bind(this, "type")}
 					 />
-				</header>
+					 </div>
 			</div>
 		);
 	}
