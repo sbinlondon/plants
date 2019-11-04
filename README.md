@@ -1,5 +1,6 @@
-TODO
+# TODO
 
 * Remove plant (inside Library store)
-* Clear fields after adding a plant
 * Styling! ✨
+* Add multiple plants at once
+* Plant profile page (Profile component, plants have ids maybe Date.now?)

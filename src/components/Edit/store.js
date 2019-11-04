@@ -6,12 +6,15 @@ export default class CreateEditStore {
 	}
 
 	type = '';
-	name = 'Bob';
-	frequency=1;
+	name = '';
+	frequency= 1;
 
 	addPlant = () => {
 		console.log(this.libraryStore.plants.length)
 		this.libraryStore.plants = [...this.libraryStore.plants, { name: this.name, type: this.type, frequency: this.frequency }]
+		this.name = ''
+		this.type = ''
+		this.frequency = 1
 	}
 
     update = (key, value) => {
